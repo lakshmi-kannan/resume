@@ -14,3 +14,4 @@ deploy:
     - _build/LakshmiKannan.pdf
   on:
     repo: lakshmi-kannan/resume
+    tags: true
