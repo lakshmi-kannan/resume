@@ -1,0 +1,179 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[6]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip
+			{#3}\\ \smallskip
+      {#4}\\ \smallskip
+			{#5}\\ \smallskip
+			{#6}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }
+	{\end{changemargin}
+}
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Lakshmi Kannan}{lakshmi@lakshmikannan.me}{github/gitlab: lakshmi-kannan}{469-442-7891}{https://www.linkedin.com/in/kannanln/}{https://www.lakshmikannan.me}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+\header{Summary}
+
+\begin{body}
+	\vspace{14pt}
+	Seasoned engineer interested in solving problems and building products. 
+\end{body}
+
+\smallskip
+
+
+% Experience
+\header{Experience}
+
+\begin{body}
+    \vspace{20pt}
+    \textbf{Software Technical Manager}, \emph{Brocade Inc.} \hfill \emph{April 2016 - Present}\\
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+    \item Building an automation platform (Brocade Workflow Composer) for next generation humanless data centers
+    \item Coordinate with product management and sales to understand customer requirements and develop engineering execution plan
+    \item Responsible for engineering execution and coordinating 10 engineers world wide to deliver product releases
+    \item Working on writing software, identifying user problems, prototype solutions \& build systems
+    \item Mentor and train junior engineers
+    \item Actively hire and expand team world wide to achieve engineering goals
+    \item Hands on programming manager - I actively participate in contributing code and engage in code reviews 
+    \item Keywords: Python, MongoDB (NoSQL), REST, ansible, terraform, docker, distributed systems
+    \end{itemize}
+
+    \textbf{Staff Engineer \& Architect}, \emph{StackStorm Inc.(Acquired by Brocade)} \hfill \emph{June 2014 - March 2016}\\
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+    \item Worked on automation software for operating highly available cloud systems
+    \item Built a platform for ingesting system events, process them and perform
+    automation actions if needed
+    \item Started as early engineer, built out product from scratch, contributed to pretty much every aspect of product
+    \item Help open source core platform (https://github.com/StackStorm/st2)
+    \item Engineering evangelism by writing blog posts and engaging customers in Slack based support
+    \item Keywords: Python, MongoDB (NoSQL), REST, docker, distributed systems
+    \end{itemize}
+    
+    \textbf{Sr. Software Engineer}, \emph{Rackspace Inc.} \hfill \emph{June 2012 - May 2014}\\ 
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+    \item Worked on cloud monitoring product that is highly available (SaaS offering from RAX)
+    \item Built a metrics platform for ingesting metrics, aggregating them and expose REST APIs to consume them (SaaS offering)
+    \item Worked on operational aspects of software, identify problems, benchmark solutions, prototype and build systems
+    \item Mentored junior engineers, led cross-team colloborations
+    \item Worked on open sourcing systems built (http://blueflood.io)
+    \item Keywords: java, node.js, python, cassandra, REST, distributed systems
+    \end{itemize}
+
+	\textbf {Software Engineer}, \emph{Amazon Inc.} \hfill \emph{May 2010 - May 2012}\\
+	\begin{itemize} \itemsep -0pt
+		\item Worked on a NoSQL data store called SABLE that drives the Amazon.com retail site pages
+    \item Worked on building a backup and retrieval system for SABLE using S3
+    \item Worked on building a repartitioning solution for SABLE (capacity addition while traffic is live)
+    \item Worked on QoS issues, flow control of traffic, gossip protocols
+    \item keywords: C++, java, python, NoSQL, S3, REST
+	\end{itemize}
+
+  \textbf {Software Intern (University associate)}, \emph{Wham! Inc. (currently, Biscotti)} \hfill \emph{Jan 2009 - May 2009}\\
+	\begin{itemize} \itemsep -0pt
+    \item Built a NISTNet based 802.11 (WiFi) emulator for testing video performance over wireless
+    \item keywords: C
+	\end{itemize}
+
+  \textbf {Software Intern (University associate)}, \emph{Iridescent Networks} \hfill \emph{Jun 2009 - Aug 2009}\\
+	\begin{itemize} \itemsep -0pt
+    \item Built a RTSP media proxy as a proof of concept
+    \item keywords: C++, boost
+	\end{itemize}
+
+  \textbf {Researcher}, \emph{OpNeAR Lab, UT Dallas} \hfill \emph{Sep 2005 - Dec 2009}\\
+  \vspace*{-4pt}
+  \begin{itemize} \itemsep -0pt
+    \item Cooperative wireless protocols in single and multi-hop networks
+    \item Distributed systems, protocol modeling, stochastic models
+    \item Wireless protocol simulator
+    \item keywords: C++
+  \end{itemize}
+
+\end{body}
+
+\smallskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Programming:}}{} Python, JavaScript, Java, C++. Also tried Scala, Rust, Lua and Go.\\
+  \emph{\textbf{Code version:}}{} Git, Perforce, SVN.\\
+\end{body}
+
+\smallskip
+
+\end{document}

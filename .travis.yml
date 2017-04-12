@@ -1,0 +1,14 @@
+before_install:
+ - sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended
+   texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng
+script:
+ - mkdir _build
+ - pdflatex -output-directory _build tex/LakshmiKannan.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: oUQm156Jz/Qe3VJ61jEMZj2uZYKrxcWkZDtqxAONYpzhPKPiJSMrzEmh7XoW8GByMO9QLc5/0lu6L8lSDoYwySBuR1TINbFj2rfmHOzCf9g0LjsKdaOMqjA/DfB/cTz+pEntFKd/BmGpWXgnNgEjjgksTZvgOALE4u8WGg3KDBWO63xwHVFjdw9gyfZv0s5XtKEtQ9WrE9ZroNjsgscvC5icYG4B9yeHCeHnZD7vEbcCKEGRIVRrdaOKya952dJ0nf5paR3t6MOGUwMXHbEL4KBJZIuq/sgjNX1wPDAtaLQfPG4w9+kUropyXcnTJYg+5SeVgfV5V0S7hV9L+NDyMugiEv8tizduOXDdLvtBdP71jgiiMcHSpzRyamTp4ExV2mUds1DF/tzWIbiTW71OgEZqVmq7ZVoQHmvVvCqsahdrVlOn00dQSeniCr1M1l90wxUdL7V1Pm0w6GnyfqGsz9SejQp05TKlGVdqQ1pGcGg3AqN8NkjPWJHv8iRWqy3j224oqTdrQ1UzJhVFpn4Q6Drh2Y7/RL0T8wZRJCOwSew3JkmnhIMjK2yDORuA6ePaJTWyv3w1fDJF1/dCPhyxjdVlZlrIkE+ASUuiKfqHPSRs/3oKXL31mHHERWnJjYIZlj8K0xoigR6h0B0vzjTfx4hhRmnNEbfLe9ExR6FbHEU=
+  file: 
+    - _build/LakshmiKannan.pdf
+  on:
+    repo: lakshmi-kannan/resume
