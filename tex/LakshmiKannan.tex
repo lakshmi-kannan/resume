@@ -11,11 +11,7 @@
 \textheight=9.25in
 
 \raggedright
-
 \pagenumbering{arabic}
-
-\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
-% DEFINITIONS FOR RESUME
 
 \newenvironment{changemargin}[2]{%
   \begin{list}{}{%
@@ -30,168 +26,154 @@
 }
 
 \newcommand{\lineover}{
-	\begin{changemargin}{-0.05in}{-0.05in}
-		\vspace*{-8pt}
-		\hrulefill \\
-		\vspace*{-2pt}
-	\end{changemargin}
+        \begin{changemargin}{-0.05in}{-0.05in}
+                \vspace*{-8pt}
+                \hrulefill \\
+                \vspace*{-2pt}
+        \end{changemargin}
 }
 
 \newcommand{\header}[1]{
-	\begin{changemargin}{-0.5in}{-0.5in}
-		\scshape{#1}\\
-  	\lineover
-	\end{changemargin}
+        \begin{changemargin}{-0.5in}{-0.5in}
+                \scshape{#1}\\
+        \lineover
+        \end{changemargin}
 }
 
 \newcommand{\contact}[6]{
-	\begin{changemargin}{-0.5in}{-0.5in}
-		\begin{center}
-			{\Large \scshape {#1}}\\ \smallskip
-			{#2}\\ \smallskip
-			{#3}\\ \smallskip
+        \begin{changemargin}{-0.5in}{-0.5in}
+                \begin{center}
+                        {\Large \scshape {#1}}\\ \smallskip
+                        {#2}\\ \smallskip
+                        {#3}\\ \smallskip
       {#4}\\ \smallskip
-			{#5}\\ \smallskip
-			{#6}\smallskip
-		\end{center}
-	\end{changemargin}
+                        {#5}\\ \smallskip
+                        {#6}\smallskip
+                \end{center}
+        \end{changemargin}
 }
 
 \newenvironment{body} {
-	\vspace*{-16pt}
-	\begin{changemargin}{-0.25in}{-0.5in}
+        \vspace*{-16pt}
+        \begin{changemargin}{-0.25in}{-0.5in}
   }
-	{\end{changemargin}
+        {\end{changemargin}
 }
 
-\newcommand{\school}[4]{
-	\textbf{#1} \hfill \emph{#2\\}
-	#3\\
-	#4\\
-}
-
-% END RESUME DEFINITIONS
-
+%-------------------------------------------------------------------------------
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
-\contact{Lakshmi Kannan}{lakshmi@lakshmikannan.me}{github/gitlab: lakshmi-kannan}{469-442-7891}{https://www.linkedin.com/in/kannanln/}{https://www.lakshmikannan.me}
+\contact{Lakshmi Kannan}{lnkmails@gmail.com}{San Francisco Bay Area}{469-442-7891}{https://www.linkedin.com/in/kannanln}{https://www.lakshmikannan.me}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Objective
+% Summary
 \header{Summary}
-
 \begin{body}
-	\vspace{14pt}
-	I am interested in solving problems and building products.
+Engineering leader with experience in both seed-stage startups and web-scale companies.
+Proven ability to hire and manage multi-national teams, define product roadmaps, and deliver core platform initiatives.
+Experienced in building distributed systems, developer experience platforms, SaaS standardization, and site reliability engineering.
+Passionate about talent, diversity, and delivering unified security and infrastructure platforms for enterprises.
 \end{body}
-
-\smallskip
-
 
 % Experience
 \header{Experience}
-
 \begin{body}
-    \vspace{20pt}
-    \textbf{Director, Software Systems}, \emph{Extreme Networks Inc.} \hfill \emph{November 2017 - Present}\\
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-    \item Continue leading Workflow Composer for cross domain automation
-    \item Responsible for automation strategy inside the company including security response
-    \item Help evangelize DevOps (CI/CD, migration to SaaS services, Release automation) to larger organization
-    \item Coordinate with product management, sales and peers to understand market fit, customer requirements and develop engineering roadmap
-    \item Responsible for engineering execution and coordinating 10 engineers, 1 Software Manager world wide to deliver products
-    \item Actively hire and expand team world wide to meet engineering goals
-    \end{itemize}
 
-    \textbf{Software Technical Manager}, \emph{Brocade Inc. (Divested to Extreme Networks)} \hfill \emph{April 2016 - October 2017}\\
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-    \item Built an automation platform (Brocade Workflow Composer) for cross domain automation across network, compute and storage
-    \item Coordinate with product management and sales to understand customer requirements and develop engineering execution plan
-    \item Responsible for engineering execution and coordinating 10 engineers world wide to deliver product releases
-    \item Wrote software, identified user problems, prototyped solutions \& built systems
-    \item Actively hire and expand team world wide to build a solid engineering team
-    \item Hire, mentor and train junior engineers
-    \item Shipped 5 major releases and 6 patch releases in a year
-    \item Helped with community evangelism (Helped grow community to 2500+ members on slack)
-    \item Keywords: Python, MongoDB (NoSQL), REST, ansible, terraform, distributed systems
-    \end{itemize}
+\textbf{Vice President of Engineering}, \emph{SentinelOne} \hfill Mar 2024 -- Present \\
+\begin{itemize}
+  \item Lead Platform Engineering org (~260 engineers globally) across SaaS, WebApp, Developer Experience, Cloud Infra, and SRE.
+  \item Drove standardization across SaaS products (SSO, licensing, usage/metering, lifecycle management).
+  \item Built unified design systems across web apps, improved developer efficiency (CI/CD pipelines, multi-cloud infra across AWS, GCP, FedRamp).
+  \item Oversaw reliability of all SaaS products powering SentinelOne Unity platform (endpoint, XDR, identity, threat services).
+\end{itemize}
 
-    \textbf{Staff Engineer \& Architect}, \emph{StackStorm Inc.(Acquired by Brocade)} \hfill \emph{June 2014 - March 2016}\\
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-    \item Worked on automation software for operating highly available cloud systems
-    \item Built a platform for ingesting system events, process them and perform
-    automation actions if needed
-    \item Started as early engineer, built out product from scratch, contributed to pretty much every aspect of product
-    \item Help open source core platform (https://github.com/StackStorm/st2)
-    \item Engineering evangelism by writing blog posts and engaging customers in Slack based support
-    \item Keywords: Python, MongoDB (NoSQL), REST, distributed systems
-    \end{itemize}
+\textbf{Senior Director of Engineering}, \emph{SentinelOne} \hfill Aug 2021 -- May 2024 \\
+\begin{itemize}
+  \item Directed teams delivering Security Data Lake (core of Singularity Unity Vision).
+  \item Recruited and scaled 40+ ICs and managers across multiple geos.
+  \item Managed both product software (UI, microservices, infra) and SRE/ops teams supporting \$700M+ ARR business.
+\end{itemize}
 
-    \textbf{Sr. Software Engineer}, \emph{Rackspace Inc.} \hfill \emph{June 2012 - May 2014}\\
-    \begin{itemize} \itemsep -0pt  % reduce space between items
-    \item Worked on cloud monitoring product that is highly available (SaaS offering from RAX)
-    \item Built a metrics platform for ingesting metrics, aggregating them and expose REST APIs to consume them (SaaS offering)
-    \item Worked on operational aspects of software, identify problems, benchmark solutions, prototype and build systems
-    \item Mentored junior engineers, led cross-team collaborations
-    \item Worked on open sourcing systems built (http://blueflood.io)
-    \item Keywords: java, node.js, python, cassandra, REST, distributed systems
-    \end{itemize}
+\textbf{Director of Engineering}, \emph{SentinelOne} \hfill Feb 2021 -- Aug 2021 \\
+\begin{itemize}
+  \item Oversaw Scalyr integration post-acquisition and SentinelOne IPO.
+  \item Migrated Scalyr services to Kubernetes, modernized deployment across regions, and transitioned IT/compliance/ops to SentinelOne standards.
+  \item Optimized infrastructure costs (migrated ELK stack to Scalyr).
+\end{itemize}
 
-	\textbf {Software Engineer}, \emph{Amazon Inc.} \hfill \emph{May 2010 - May 2012}\\
-	\begin{itemize} \itemsep -0pt
-		\item Worked on a NoSQL data store called SABLE that drives the Amazon.com retail site pages
-    \item Worked on building a backup and retrieval system for SABLE using S3
-    \item Worked on building a repartitioning solution for SABLE (capacity addition while traffic is live)
-    \item Worked on QoS issues, flow control of traffic, gossip protocols
-    \item keywords: C++, java, python, NoSQL, S3, REST
-	\end{itemize}
+\textbf{Director of Engineering}, \emph{Scalyr} \hfill Oct 2019 -- Mar 2021 \\
+\begin{itemize}
+  \item Led Cloud Tech and SRE teams; owned open-source agent, ingestion pipelines, and compliance/security.
+  \item Implemented SLO/error budgets, incident response program, and automation-focused operations.
+  \item Temporarily led Customer Success; directly interfaced with customers.
+\end{itemize}
 
-  \textbf {Software Intern (University associate)}, \emph{Wham! Inc. (currently, Biscotti)} \hfill \emph{Jan 2009 - May 2009}\\
-	\begin{itemize} \itemsep -0pt
-    \item Built a NISTNet based 802.11 (WiFi) emulator for testing video performance over wireless
-    \item keywords: C
-	\end{itemize}
+\textbf{Director, Software Engineering}, \emph{Extreme Networks} \hfill Oct 2017 -- Oct 2019 \\
+\begin{itemize}
+  \item Drove SaaS strategy; led transition from on-prem to cloud products including Network Management and Workflow Automation SaaS.
+  \item Helped open new office in Shannon, Ireland with IDA funding; hired first managers and engineers.
+\end{itemize}
 
-  \textbf {Software Intern (University associate)}, \emph{Iridescent Networks} \hfill \emph{Jun 2009 - Aug 2009}\\
-	\begin{itemize} \itemsep -0pt
-    \item Built a RTSP media proxy as a proof of concept
-    \item keywords: C++, boost
-	\end{itemize}
+\textbf{Software Manager}, \emph{Brocade (via StackStorm acquisition)} \hfill Mar 2016 -- Oct 2017 \\
+\begin{itemize}
+  \item Shipped Brocade Workflow Composer, enabling enterprises to automate both cloud and network operations.
+  \item Managed 10 engineers globally; delivered 5 major releases in 1 year through 2 acquisitions.
+\end{itemize}
 
-  \textbf {Researcher}, \emph{OpNeAR Lab, UT Dallas} \hfill \emph{Sep 2005 - Dec 2009}\\
-  \vspace*{-4pt}
-  \begin{itemize} \itemsep -0pt
-    \item Cooperative wireless protocols in single and multi-hop networks
-    \item Distributed systems, protocol modeling, stochastic models
-    \item Wireless protocol simulator
-    \item keywords: C++
-  \end{itemize}
+\textbf{Staff Engineer \& Tech Lead}, \emph{StackStorm} \hfill Jun 2014 -- Mar 2016 \\
+\begin{itemize}
+  \item Early engineer; built auto-remediation platform, designed key components, and led engineering team.
+  \item Supported open-source release (st2) and built strong community presence.
+\end{itemize}
+
+\textbf{Sr. Software Development Engineer}, \emph{Rackspace} \hfill Jun 2012 -- May 2014 \\
+\begin{itemize}
+  \item Built cloud monitoring and metrics platform (Blueflood) later open-sourced.
+  \item Scaled product from internal SaaS component to independent cloud service.
+\end{itemize}
+
+\textbf{Software Development Engineer}, \emph{Amazon} \hfill May 2010 -- May 2012 \\
+\begin{itemize}
+  \item Designed archival and repartitioning systems for cloud storage, ensuring live migrations without downtime.
+  \item Gained strong operational experience in large-scale distributed systems.
+\end{itemize}
+
+\textbf{Research Assistant}, \emph{University of Texas at Dallas} \hfill Oct 2005 -- Dec 2009 \\
+\begin{itemize}
+  \item Researched cooperative wireless protocols and stochastic modeling at OpNeAR Lab.
+\end{itemize}
+
+\textbf{Internships} \hfill 2009 \\
+\begin{itemize}
+  \item Biscotti Inc.: Built wireless emulator based on NIST Net. (C, 802.11 MAC)
+  \item Iridescent Networks: Developed RTSP media proxy. (C, C++, RTSP, SIP)
+\end{itemize}
 
 \end{body}
 
-\smallskip
+% Education
+\header{Education}
+\begin{body}
+\textbf{The University of Texas at Dallas} \hfill 2005 -- 2010 \\
+Ph.D., Electrical Engineering
+\end{body}
 
-% \newpage{} % uncomment this line if you want to force a new page
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Skills
 \header{Skills}
-
 \begin{body}
-	\vspace{14pt}
-	\emph{\textbf{Programming:}}{} Python, JavaScript, Java, C++. Also tried Scala, Rust, Lua and Go.\\
-  \emph{\textbf{Code version:}}{} Git, Perforce, SVN.\\
+\begin{itemize}
+  \item Distributed Systems, Cloud Platforms, SaaS Engineering, SRE/DevOps
+  \item Python, C++, Java, C, JavaScript (plus exposure to Go, Rust, Scala)
+  \item Product \& Platform Strategy, Multi-national Hiring, Incident Management, Compliance (SOC2)
+\end{itemize}
 \end{body}
 
-\header{Education}
-
+% Certifications
+\header{Certifications}
 \begin{body}
-    \vspace{14pt}
-    \emph{Ph.D., University of Texas at Dallas, 2005 - 2009}
+\begin{itemize}
+  \item Business Essentials
+\end{itemize}
 \end{body}
-
-\smallskip
 
 \end{document}
